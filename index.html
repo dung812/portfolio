@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nguyen Dung">
+    <title>Nguyễn Thanh Dũng - Web Developer</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!--==================== CSS GRID ====================-->
+    <link rel="stylesheet" href="assets/css/grid.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--==================== CSS RESPONSIVE ====================-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--==================== Chat bot (Tawk.to) ====================-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/61cfc2e380b2296cfdd491af/1fo9p2ijd';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+
+</head>
+<body>
+    <!--==================== PRELOADER ====================-->
+    <div id="preloader">
+        <div class="outer">
+            <!-- Google Chrome -->
+            <div class="infinityChrome">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Safari and others -->
+            <div class="infinity">
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+            </div>
+            <!-- Stuff -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
+                <defs>
+                    <filter id="goo">
+                        <fegaussianblur in="SourceGraphic" stddeviation="6" result="blur"></fegaussianblur>
+                        <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></fecolormatrix>
+                        <feblend in="SourceGraphic" in2="goo"></feblend>
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    <!--==================== OVERLAY ====================-->
+    <div class="overlay"></div>
+    
+    <!--==================== HEADER ====================-->
+    <div class="header" id="header">
+        <div class="header__navigation">
+            <div class="header__logo">
+                <i class="uil uil-java-script"></i>
+                <a href="#">Dung</a>
+            </div>
+            <div class="navigation__menu">
+                <ul class="nav">
+                    <li class="nav__item"><a href="#" class="home nav-link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="about nav-link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="skills nav-link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="work nav-link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="contact nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </div>
+    </div>
+    <!--==================== CONTENT-BODY ====================-->
+    <div id="main">
+        <!--==================== HOME ====================-->
+        <div class="home home-background section" id="home">
+            <div class="section-content center">
+                <p class="header-name">
+                    Hi There, <br/>I'm Nguyen Thanh Dung
+                </p>
+                <p class="section__title title-home">I'm Into <span class="txt-type my-job" data-wait="2000" data-words='["Web Developer", "Web Designer", "Creator"]'></span><span class="my-job">|</span></p>
+                <p class="section__desc subtitle-home">
+                    Web Developer with a passion for programming, solving problems and coming up with creative solutions.
+                </p>
+                <a href="#about" class="button-more">
+                    Learn more about me
+                    <i class="uil uil-arrow-down icon-down"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--==================== ABOUT ====================-->
+        <div class="about section" id="about">
+            <h1 class="section__main-title center">
+                About
+            </h1>
+            <div class="grid wide center">
+                <div class="row">
+                    <div class="col l-5 m-12 c-12">
+                        <img src="assets/img/about.jpg" alt="" class= "about__image">
+                    </div>
+                    <div class="col l-o-1 l-6 m-12 c-12">
+                        <p class="section__title about__subtitle">I’m Dung</p>
+                        <p class="section__desc about__desc">I'm a third-year majoring in software engineering student at Nguyen Tat Thanh University. As an enthusiastic young Website Developer, I'm very passionate about improving my coding skills and developing my own applications and software. With my acquired knowledge, creativity, and hard work, my goals are to become a Full-Stack Developer.</p>
+                        <div class="row info-number about__number">
+                            <div class="col l-4 m-4 c-4">
+                                <p class="info-number__number experience">0</p>
+                                <p class="section__subtitle">Year<br/>experience</p>
+                            </div>
+                            <div class="col l-4 m-4 c-4 ">
+                                <p class="info-number__number project">0</p>
+                                <p class="section__subtitle">Completed<br/>projects</p>
+                            </div>
+                            <div class="col l-4 m-4 c-4">
+                                <p class="info-number__number company">0</p>
+                                <p class="section__subtitle">Companies<br/>worked</p>
+                            </div>
+                        </div>
+                        <div class="about__button">
+                            <a href="assets/pdf/MyCV.pdf" class="primary-button btn-cv" target="_blank" download>
+                                Download CV
+                                <i class="uil uil-import"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== SKILLS ====================-->
+        <div class="skills section" id="skills">
+            <h1 class="section__main-title center skills__title">
+                Skills
+            </h1>
+            <div class="grid wide skills-slogan">
+                <div class="row">
+                    <div class="col l-4 m-4 c-4">
+                        <div class="box-content skills-slogan__box">
+                            <i class="uil uil-forward skills-slogan__icon"></i>
+                        </div>
+                        <p class= "section__subtitle skills-slogan__subtitle center">Developing blazing fast web applications for seamless user interaction.</p>
+                    </div>
+                    <div class="col l-4 m-4 c-4">
+                        <div class="box-content skills-slogan__box">
+                            <i class="uil uil-desktop skills-slogan__icon"></i>
+                        </div>
+                        <p class= "section__subtitle skills-slogan__subtitle center">Desktop-first, responsive design layout for all devices is a top priority.</p>
+                    </div>
+                    <div class="col l-4 m-4 c-4">
+                        <div class="box-content skills-slogan__box">
+                            <i class="uil uil-arrow-growth skills-slogan__icon"></i>
+                        </div>
+                        <p class= "section__subtitle skills-slogan__subtitle center">Constantly continues to learn new technologies and keeping up-to-date with the freshest trends.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid wide technical tab-content">
+                <div class="row tabs">
+                    <div class="col l-3 center tab-item active">
+                        <i class="uil uil-brackets-curly"></i>
+                        Front-end
+                    </div>
+                    <div class="col l-3 center tab-item">
+                        <i class="uil uil-server-network"></i>
+                        Back-end
+                    </div>
+                    <div class="col l-3 center tab-item">
+                        <i class="uil uil-database"></i>
+                        Database
+                    </div>
+                    <div class="col l-3 center tab-item">
+                        <i class="uil uil-palette"></i>
+                        Design
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <div class="row tab-pane active">
+                    <div class="col l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/html5.png" alt="">
+                        <p class="section__subtitle">HTML 5</p>
+                    </div>
+                    <div class="col l-o-2 l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/css.jpg" alt="">
+                        <p  class="section__subtitle">CSS 3</p>
+                    </div>
+                    <div class="col l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/sass.jpg" alt="">
+                        <p class="section__subtitle">SASS</p>
+                    </div>
+                    <div class="col l-o-2 l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/taiwind.png" alt="">
+                        <p  class="section__subtitle">Tailwind CSS</p>
+                    </div>
+                    <div class="col l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/bootstrap.png" alt="">
+                        <p class="section__subtitle">Bootstrap 4</p>
+                    </div>
+                    <div class="col l-o-2 l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/javascript.jpg" alt="">
+                        <p  class="section__subtitle">Javascript (ES6+)</p>
+                    </div>
+                    <div class="col l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/jquery.jpg" alt="">
+                        <p class="section__subtitle">jQuery</p>
+                    </div>
+                    <div class="col l-o-2 l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/react.png" alt="">
+                        <p  class="section__subtitle">ReactJS</p>
+                    </div>
+                </div>
+                <div class="row tab-pane">
+                    <div class="col l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/asp.png" alt="">
+                        <p class="section__subtitle">ASP.NET MVC 5</p>
+                    </div>
+                </div>
+                <div class="row tab-pane">
+                    <div class="col l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/sql.png" alt="">
+                        <p class="section__subtitle">SQL Server</p>
+                    </div>
+                    <div class="col l-o-2 l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/oracle.png" alt="">
+                        <p class="section__subtitle">Oracle</p>
+                    </div>
+                </div>
+                <div class="row tab-pane">
+                    <div class="col l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/figma.png" alt="">
+                        <p class="section__subtitle">Figma</p>
+                    </div>
+                    <div class="col l-o-2 l-5 m-6 c-12 technical__item">
+                        <img src="assets/img/photoshop.png" alt="">
+                        <p class="section__subtitle">Adobe photoshop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== WORK ====================-->
+        <div class="work section" id="work">
+            <h1 class="section__main-title center title-skill">
+                Work
+            </h1>
+            <div class="grid wide swiper portfolio">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="row no-gutters swiper-slide">
+                        <div class="col l-o-2 l-4 m-12 c-12">
+                            <img src="assets/img/project/ecommerce.jpg" alt="" class= "portfolio__img">
+                        </div>
+                        <div class="col l-5 m-12 c-12 slide-content">
+                            <h3 class="section__title">Ecommerce ASP.NET-MVC Online shopping men clothes</h3>
+                            <p class="section__desc">Back-end project developed including view products and articles, filtering and paging, shopping cart, online payment, CRUD, chart statistics,...</p>
+                            <p class="section_desc">Using: HTML, CSS, Javascript, ASP.NET MVC, SQL Server.</p>
+                            <a href="https://github.com/ntdung0812/E-commerce_ASP.NET-MVC.git" class="project__link"  target="_blank">Source code</a>
+                            <a href="https://youtu.be/xcqi7A-sCgo" class="primary-button portfolio__button" target="_blank">
+                                View website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters swiper-slide">
+                        <div class="col l-o-2 l-4 m-12 c-12">
+                            <img src="assets/img/project/portfolio-big.jpg" alt="" class= "portfolio__img">
+                        </div>
+                        <div class="col l-5 m-12 c-12 slide-content">
+                            <h3 class="section__title">Portfolio Website</h3>
+                            <p class="section__desc">Personal Portfolio Website. You're Here Only!</p>
+                            <p class="section_desc">HTML, CSS, Javascript vanila</p>
+                            <a href="https://github.com/ntdung0812/portfolio.git" class="project__link"  target="_blank">Source code</a>
+                            <a href="https://nguyendung.netlify.app/" class="primary-button portfolio__button" target="_blank">
+                                View website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters swiper-slide">
+                        <div class="col l-o-2 l-4 m-12 c-12">
+                            <img src="assets/img/project/opera.jpg" alt="" class= "portfolio__img">
+                        </div>
+                        <div class="col l-5 m-12 c-12 slide-content">
+                            <h3 class="section__title">Clone opera website</h3>
+                            <p class="section__desc">A static web page I completed in sophomore - no responsive.</p>
+                            <p class="section_desc">Using: HTML, CSS.</p>
+                            <a href="https://github.com/ntdung0812/opera-website_clone.git" class="project__link"  target="_blank">Source code</a>
+                            <a href="https://ntdung0812.github.io/opera-website_clone/" class="primary-button portfolio__button" target="_blank">
+                                View website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters swiper-slide">
+                        <div class="col l-o-2 l-4 m-12 c-12">
+                            <img src="assets/img/project/furniture.jpg" alt="" class= "portfolio__img">
+                        </div>
+                        <div class="col l-5 m-12 c-12 slide-content">
+                            <h3 class="section__title">Clone furniture website</h3>
+                            <p class="section__desc">A static web page I completed in sophomore - no responsive.</p>
+                            <p class="section_desc">Using: HTML, CSS, JS, Bootstrap.</p>
+                            <a href="https://ntdung0812.github.io/furniture-shopping_clone/" class="project__link"  target="_blank">Source code</a>
+                            <a href="https://github.com/ntdung0812/furniture-shopping_clone.git" class="primary-button portfolio__button" target="_blank">
+                                View website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters swiper-slide">
+                        <div class="col l-o-2 l-4 m-12 c-12">
+                            <img src="assets/img/project/theband.jpg" alt="" class= "portfolio__img">
+                        </div>
+                        <div class="col l-5 m-12 c-12 slide-content">
+                            <h3 class="section__title">Clone the-band w3c website</h3>
+                            <p class="section__desc">The last project of course HTML, CSS in fullstack.edu.vn</p>
+                            <p class="section_desc">Using: HTML, CSS, JS.</p>
+                            <a href="https://github.com/ntdung0812/the-band_clone.git" class="project__link"  target="_blank">Source code</a>
+                            <a href="https://ntdung0812.github.io/the-band_clone/" class="primary-button portfolio__button" target="_blank">
+                                View website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination portfolio__papination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev portfolio__preNext"></div>
+                <div class="swiper-button-next portfolio__preNext"></div>
+            </div>
+            <div class="work-more">
+                <a href="./project/project.html">View more</a>
+            </div>
+        </div>
+
+        <!--==================== CONTACT ====================-->
+        <div class="contact section" id="contact">
+            <h1 class="section__main-title center title-skill">
+                Contact
+            </h1>
+            <div class="grid wide">
+                <div class="row contact-content">
+                    <div class="col l-6 m-12 c-12 contact-info">
+                        <p class="section__title contact-title">If you've got a project in mind, why not get in touch. Let's work together.</p>
+                        <p class="section__subtitle contact-des">I'm available for interesting work or projects. Big or small. You can contact me using the form, or get my information below.</p>
+                        <div class="contact--social-network">
+                            <div class="social-item"><a href="tel: +84 706437167"><i class="uil uil-phone social-icon"></i>+84 (0) 706 437 167</a></div>
+                            <div class="social-item"><a href="mailto: ntdung8124@gmail.com"><i class="uil uil-envelope-alt social-icon"></i>ntdung8124@gmail.com</a></div>
+                            <div class="social-item"><a href="https://m.me/nguyenthanhdungggg/" target="_blank"><i class="uil uil-facebook-messenger-alt social-icon"></i>Messenger</a></div>
+                        
+                        </div>
+                    </div>
+                    <div class="col l-o-2 l-4 m-12 c-12">
+                        <form action="" method="POST" class="contact__form" id="form-1">
+                            <div class="form-group">
+                                <input id="fromName" name="name" type="text" placeholder="Your name" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+        
+                            <div class="form-group">
+                                <textarea rows="8" id="msg" placeholder="Your message" class="form-control"></textarea>
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="primary-button btn-submit center">Send message</button>
+                                <!-- <a class="primary-button btn-submit center" onclick="sendMail()">Đăng ký</a> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==================== FOOTER ====================-->
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-4 m-12 c-12 footer-item">
+                    <p class="footer__title">Dung's Portfolio</p>
+                    <p class="footer_desc">Thank you for visiting my personal portfolio
+                        website. Connect with me over socials.</p>
+                    <p class="footer_desc">Please wait for a while all major projects will 
+                        be listed soon. Till then keep visiting. Connect 
+                        with me over live chat!
+                    </p>
+                </div>
+                <div class="col l-4 m-12 c-12 footer-item">
+                    <p class="footer__title">Quick Links</p>
+                    <ul>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#">Home</a></li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#about">About</a></li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#skills">Skills</a></li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#work">Work</a></li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col l-4 m-12 c-12 footer-item">
+                    <p class="footer__title">Contact info</p>
+                    <div class="social-item"><a href="tel: 0706437167"><i class="uil uil-phone social-icon"></i>+84 (0) 706 437 167</a></div>
+                    <div class="social-item"><a href="mailto: ntdung8124@gmail.com"><i class="uil uil-envelope-alt social-icon"></i>ntdung8124@gmail.com</a></div>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/nguyenthanhdungggg/" target="_blank" class="footer__icon"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-d%C5%A9ng-89b75819a" target="_blank" class="footer__icon"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://github.com/knguyn16" target="_blank" class="footer__icon"><i class="uil uil-github-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© Design with by <span>Nguyen Dung</span></p>
+        </div>
+    </div>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== PRELOADER =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        window.addEventListener("load",function () {
+            $("#preloader").fadeOut('slow');
+        });
+    </script>
+
+    <!--==================== VALIDATE FORM ====================-->
+    <script src="assets/js/validator.js"></script>
+    <script>
+        Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules:[
+                Validator.isRequired('#fromName'),
+                Validator.isEmail('#email'),
+            ],
+            onSubmit: function (data){ // Trả lại các giá trị mà user đã nhập
+                // Call API
+                console.log(data);    
+            }
+        });
+    </script>
+    
+    <!--==================== SENT EMAIL ====================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_p0sGghCRUD1hI8ItVDztq");
+    })();
+    </script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
