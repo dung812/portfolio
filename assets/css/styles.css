@@ -43,8 +43,26 @@
     --z-modal: 1000;
 }
 
+/*==================== SCROLL BAR ====================*/
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
 /*==================== RESET CSS ====================*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -88,17 +106,17 @@ img {
 input,
 textarea,
 select,
-button{
-outline: none;
+button {
+    outline: none;
 }
 
-input{
-line-height: normal;
+input {
+    line-height: normal;
 }
 
 label,
-button{
-cursor: pointer;
+button {
+    cursor: pointer;
 }
 
 
@@ -229,7 +247,6 @@ cursor: pointer;
 .nav__item:hover::after {
     width:100%
 }
-
 
 .btn-backHome::after {
     width: 0 !important;;
