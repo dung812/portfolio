@@ -224,7 +224,7 @@ document.addEventListener("click", function (e) {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 2000,
+    duration: 1800,
     // reset: true
 });
 /* SCROLL HOME */
@@ -301,3 +301,35 @@ if (checkMoblie()) {
         })
     },200));
 }
+
+/*==================== DISABLE DEVELOPER MODE ====================*/
+document.onkeydown = function(e) {
+    if(e.keyCode == 123) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+       return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+       return false;
+    }
+}
+
+/*==================== CHANGE TITLE WHEN CHANGE TAG ====================*/
+document.addEventListener('visibilitychange',
+function(){
+    if(document.visibilityState === "visible"){
+        document.title = "Portfolio | Nguyen Thanh Dung";
+        // $("#favicon").attr("href","assests/img/favicon.png");
+    }
+    else {
+        document.title = "Come Back To Portfolio";
+        // $("#favicon").attr("href","assests/img/favhand.png");
+    }
+});
