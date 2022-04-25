@@ -161,9 +161,9 @@ function counterUp(el, to) {
 }
 
 function activeNumberCounter() {
-    counterUp(experience, 30);
-    counterUp(project, 50);
-    counterUp(company, 25);
+    counterUp(experience, 0);
+    counterUp(project, 25);
+    counterUp(company, 0);
 }
 
 document.addEventListener("scroll",function(){
