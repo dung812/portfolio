@@ -162,7 +162,7 @@ function counterUp(el, to) {
 
 function activeNumberCounter() {
     counterUp(experience, 0);
-    counterUp(project, 25);
+    counterUp(project, 20);
     counterUp(company, 0);
 }
 
