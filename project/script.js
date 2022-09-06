@@ -1,3 +1,50 @@
+/*==================== RENDER LIST PROJECT ====================*/
+const mainProjectElement = document.querySelector("#main-project-list")
+const cloneProjectElement = document.querySelector("#clone-project-list")
+const miniProjectElement = document.querySelector("#mini-project-list")
+const apiProjectElement = document.querySelector("#api-project-list")
+
+
+function renderProjectItem (data) {
+	const templateProjectItem = `
+	<div class="col l-4 m-6 c-12 card">
+		<div class="project--item">
+			<div class="project-image">
+				<img src="../assets/img/project/${data.image}" alt="">
+			</div>
+			<div class="card-content project-item--content">
+				<h3 class="project-title center">${data.title}</h3>
+				<p class="project-desc">${data.description}<br/>Used: ${data.techs}</p>
+			<div class="project-button">
+				<a href="${data.linkView}" target="_blank"><i class="uil uil-eye"></i> View</a>
+				<a href="${data.linkSourceCode}" target="_blank">Code <i class="uil uil-arrow"></i></a>
+			</div>
+			</div>
+		</div>
+	</div>`;
+	return templateProjectItem;
+}
+
+
+mainProjects.forEach(item => {
+	const projectItem = renderProjectItem(item);
+	mainProjectElement.insertAdjacentHTML("beforeend", projectItem);
+})
+cloneProjects.forEach(item => {
+	const projectItem = renderProjectItem(item);
+	cloneProjectElement.insertAdjacentHTML("beforeend", projectItem);
+})
+miniProjects.forEach(item => {
+	const projectItem = renderProjectItem(item);
+	miniProjectElement.insertAdjacentHTML("beforeend", projectItem);
+})
+apiProjects.forEach(item => {
+	const projectItem = renderProjectItem(item);
+	apiProjectElement.insertAdjacentHTML("beforeend", projectItem);
+})
+
+
+
 /*==================== BUTTON MENU NAVIGATION RESPONVE ====================*/ 
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector(".navigation__menu");
