@@ -1,3 +1,4 @@
+
 /*==================== BUTTON MENU NAVIGATION RESPONVE ====================*/ 
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector(".navigation__menu");
@@ -333,3 +334,31 @@ function(){
         // $("#favicon").attr("href","assests/img/favhand.png");
     }
 });
+
+
+/*==================== RENDER SKILLS ====================*/
+const wrapskillFrontEnd = document.getElementById('front-end');
+const wrapskillBackend = document.getElementById('back-end');
+const wrapskillDatabase = document.getElementById('database');
+const wrapskillDesign = document.getElementById('design');
+
+function RenderSkills (data) {
+    const template = `<div class="col l-5 m-6 c-12 technical__item">
+                        <img src="${data.image}" alt="">
+                        <p class="section__subtitle">${data.label}</p>
+                    </div> `;
+    return template;
+}
+
+frontEnd.forEach(item => {
+    wrapskillFrontEnd.insertAdjacentHTML("beforeend", RenderSkills(item));
+})
+backEnd.forEach(item => {
+    wrapskillBackend.insertAdjacentHTML("beforeend", RenderSkills(item));
+})
+database.forEach(item => {
+    wrapskillDatabase.insertAdjacentHTML("beforeend", RenderSkills(item));
+})
+design.forEach(item => {
+    wrapskillDesign.insertAdjacentHTML("beforeend", RenderSkills(item));
+})

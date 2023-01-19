@@ -26,6 +26,24 @@ const mainProjects = [
 		linkView: "http://onlineshopdemo.unaux.com/",
 		linkSourceCode: "http://onlineshopdemo.unaux.com/",
 	},
+	{
+		id: 4,
+		title: "Manage Assets",
+		description: "The Project is an assignment I developed during the time I trained at NashTech company. The project uses the Scrum process and deployed in Azure DevOps.",
+		techs: "ASP.NET Core, Identity Server 4, ReactJS, Redux toolkit, Redux Thunk, Scrum Process, Azure Devops",
+		image: "manage-asset.png",
+		linkView: "https://github.com/dung812/Manage-Assets-RookieProgram",
+		linkSourceCode: "https://github.com/dung812/Manage-Assets-RookieProgram",
+	},
+	{
+		id: 5,
+		title: "E-commerce Shoes Shopping",
+		description: "The E-commerce Project is my thesis. The project divide 2 site is customer site and admin site, customer site is using MVC model and Admin site using SPA + Web API.",
+		techs: "ASP.NET Core, bootstrap, Javascript, Ajax/jQuery, ReactJS, Redux toolkit, Redux middleware thunk, Axios, JWT",
+		image: "ShoesShop.png",
+		linkView: "http://ntdung812-001-site1.btempurl.com/",
+		linkSourceCode: "https://github.com/dung812/Assignment-Ecommerce-Rookie.git",
+	},
 ]
 
 const cloneProjects = [
@@ -160,15 +178,6 @@ const apiProjects = [
 		image: "blog.jpg",
 		linkView: "https://dung812.github.io/JSON-Server-CRUDblog_API/",
 		linkSourceCode: "https://github.com/dung812/JSON-Server-CRUDblog_API.git",
-	},
-	{
-		id: 2,
-		title: "Random Dad joke",
-		description: "It's a simple web page show the best dad jokes",
-		techs: "HTML, CSS, Javascript",
-		image: "joke.jpg",
-		linkView: "https://dung812.github.io/random-joke_API/",
-		linkSourceCode: "https://github.com/dung812/random-joke_API.git",
 	},
 	{
 		id: 3,
