@@ -20,11 +20,8 @@ window.addEventListener("scroll", function() {
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (pageYOffset >=  sectionHeight / 3) {
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
             current = section.getAttribute("id");
-				console.log(current)
-				console.log({sectionTop,sectionHeight})
-				console.log(pageYOffset)
         }
     });
 
