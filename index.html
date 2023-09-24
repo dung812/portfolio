@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +10,41 @@
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
+
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!--==================== CSS GRID ====================-->
     <link rel="stylesheet" href="assets/css/grid.css">
 
+    
+    <!--==================== CSS RESPONSIVE ====================-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!--==================== CSS RESPONSIVE ====================-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/timeline.css">
+
+
+
 
     <!--==================== Chat bot (Tawk.to) ====================-->
     <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/61cfc2e380b2296cfdd491af/1fo9p2ijd';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/61cfc2e380b2296cfdd491af/1fo9p2ijd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
 
 </head>
+
 <body>
     <!--==================== PRELOADER ====================-->
     <div id="preloader">
@@ -63,7 +72,8 @@
                 <defs>
                     <filter id="goo">
                         <fegaussianblur in="SourceGraphic" stddeviation="6" result="blur"></fegaussianblur>
-                        <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></fecolormatrix>
+                        <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo">
+                        </fecolormatrix>
                         <feblend in="SourceGraphic" in2="goo"></feblend>
                     </filter>
                 </defs>
@@ -72,7 +82,7 @@
     </div>
     <!--==================== OVERLAY ====================-->
     <div class="overlay"></div>
-    
+
     <!--==================== HEADER ====================-->
     <div class="header" id="header">
         <div class="header__navigation">
@@ -85,6 +95,7 @@
                     <li class="nav__item"><a href="#" class="home nav-link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="about nav-link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="skills nav-link">Skills</a></li>
+                    <li class="nav__item"><a href="#timeLine" class="timeLine nav-link">Time Line</a></li>
                     <li class="nav__item"><a href="#work" class="work nav-link">Work</a></li>
                     <li class="nav__item"><a href="#contact" class="contact nav-link">Contact</a></li>
                 </ul>
@@ -100,11 +111,14 @@
         <div class="home home-background section" id="home">
             <div class="section-content center">
                 <p class="header-name">
-                    Hi There, <br/>I'm Nguyen Thanh Dung
+                    Hi There, <br />I'm Nguyen Thanh Dung
                 </p>
-                <p class="section__title title-home">I'm Into <span class="txt-type my-job" data-wait="2000" data-words='["Web Developer", "Web Designer", "Creator"]'></span><span class="my-job">|</span></p>
+                <p class="section__title title-home">I'm Into <span class="txt-type my-job" data-wait="2000"
+                        data-words='["Web Developer", "Web Designer", "Creator"]'></span><span class="my-job">|</span>
+                </p>
                 <p class="section__desc subtitle-home">
-                    Web Developer with a passion for programming, solving problems and coming up with creative solutions.
+                    Web Developer with a passion for programming, solving problems and coming up with creative
+                    solutions.
                 </p>
                 <a href="#about" class="button-more">
                     Learn more about me
@@ -121,27 +135,32 @@
             <div class="grid wide center">
                 <div class="row">
                     <div class="col l-5 m-12 c-12">
-                        <img src="assets/img/about.jpg" alt="" class= "about__image">
+                        <img src="assets/img/about.jpg" alt="" class="about__image">
                     </div>
                     <div class="col l-o-1 l-6 m-12 c-12">
                         <p class="section__title about__subtitle">I’m Dung</p>
-                        <p class="section__desc about__desc">I'm a software engineer major at the Nguyen Tat Thanh University and I'm currently in my third year. As an enthusiastic young Website Developer, I'm very passionate about improving my coding skills and developing my own applications and software. With my acquired knowledge, creativity, and hard work, my goals are to become a Full-Stack Developer.</p>
+                        <p class="section__desc about__desc">I'm a software engineer major at the Nguyen Tat Thanh
+                            University and I'm currently in my third year. As an enthusiastic young Website Developer,
+                            I'm very passionate about improving my coding skills and developing my own applications and
+                            software. With my acquired knowledge, creativity, and hard work, my goals are to become a
+                            Full-Stack Developer.</p>
                         <div class="row info-number about__number">
                             <div class="col l-4 m-4 c-4">
                                 <p class="info-number__number experience">0</p>
-                                <p class="section__subtitle">Year<br/>experience</p>
+                                <p class="section__subtitle">Year<br />experience</p>
                             </div>
                             <div class="col l-4 m-4 c-4 ">
                                 <p class="info-number__number project">0</p>
-                                <p class="section__subtitle">Completed<br/>projects</p>
+                                <p class="section__subtitle">Completed<br />projects</p>
                             </div>
                             <div class="col l-4 m-4 c-4">
                                 <p class="info-number__number company">0</p>
-                                <p class="section__subtitle">Companies<br/>worked</p>
+                                <p class="section__subtitle">Companies<br />worked</p>
                             </div>
                         </div>
                         <div class="about__button">
-                            <a href="assets/pdf/CV-SoftwareEngineer-NguyenThanhDung.pdf" class="primary-button btn-cv" target="_blank" download>
+                            <a href="assets/pdf/CV-SoftwareEngineer-NguyenThanhDung.pdf" class="primary-button btn-cv"
+                                target="_blank" download>
                                 Download CV
                                 <i class="uil uil-import"></i>
                             </a>
@@ -162,19 +181,22 @@
                         <div class="box-content skills-slogan__box">
                             <i class="uil uil-forward skills-slogan__icon"></i>
                         </div>
-                        <p class= "section__subtitle skills-slogan__subtitle center">Developing blazing fast web applications for seamless user interaction.</p>
+                        <p class="section__subtitle skills-slogan__subtitle center">Developing blazing fast web
+                            applications for seamless user interaction.</p>
                     </div>
                     <div class="col l-4 m-4 c-4">
                         <div class="box-content skills-slogan__box">
                             <i class="uil uil-desktop skills-slogan__icon"></i>
                         </div>
-                        <p class= "section__subtitle skills-slogan__subtitle center">Desktop-first, responsive design layout for all devices is a top priority.</p>
+                        <p class="section__subtitle skills-slogan__subtitle center">Desktop-first, responsive design
+                            layout for all devices is a top priority.</p>
                     </div>
                     <div class="col l-4 m-4 c-4">
                         <div class="box-content skills-slogan__box">
                             <i class="uil uil-arrow-growth skills-slogan__icon"></i>
                         </div>
-                        <p class= "section__subtitle skills-slogan__subtitle center">Constantly continues to learn new technologies and keeping up-to-date with the freshest trends.</p>
+                        <p class="section__subtitle skills-slogan__subtitle center">Constantly continues to learn new
+                            technologies and keeping up-to-date with the freshest trends.</p>
                     </div>
                 </div>
             </div>
@@ -227,6 +249,39 @@
             </div>
         </div>
 
+        <!--==================== Timeline ====================-->
+        <div class="timeLine section" id="timeLine">
+            <h1 class="section__main-title center title-skill">
+                Time line
+            </h1>
+            <div class="grid wide swiper portfolio">
+                <div class="grid wide skills-slogan">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="timeline">
+                                <div class="timeline__wrap">
+                                    <div class="timeline__items">
+                                        <div class="timeline__item">
+                                            <div class="timeline__content">
+                                                <h3 style="margin-bottom: 8px;">2022</h3>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, error! Voluptas delectus quo mollitia perferendis fugiat voluptates maxime fugit? Autem minus aperiam dolorem numquam repudiandae ullam possimus odit, provident laborum!
+                                            </div>
+                                        </div>
+                                        <div class="timeline__item">
+                                            <div class="timeline__content">
+                                                <h3 style="margin-bottom: 8px;">2023 - today</h3>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, error! Voluptas delectus quo mollitia perferendis fugiat voluptates maxime fugit? Autem minus aperiam dolorem numquam repudiandae ullam possimus odit, provident laborum!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--==================== WORK ====================-->
         <div class="work section" id="work">
             <h1 class="section__main-title center title-skill">
@@ -238,29 +293,36 @@
                     <!-- Slides -->
                     <div class="row no-gutters swiper-slide">
                         <div class="col l-o-2 l-4 m-12 c-12">
-                            <img src="assets/img/project/ecommerce.jpg" alt="" class= "portfolio__img">
+                            <img src="assets/img/project/ecommerce.jpg" alt="" class="portfolio__img">
                         </div>
                         <div class="col l-5 m-12 c-12 slide-content">
                             <h3 class="section__title">Ecommerce ASP.NET-MVC Online shopping men clothes</h3>
-                            <p class="section__desc">Back-end project developed including view products and articles, filtering and paging, shopping cart, online payment, CRUD, chart statistics,...</p>
+                            <p class="section__desc">Back-end project developed including view products and articles,
+                                filtering and paging, shopping cart, online payment, CRUD, chart statistics,...</p>
                             <p class="section_desc">Used: HTML, CSS, Javascript, ASP.NET MVC, SQL Server.</p>
-                            <a href="https://github.com/dung812/E-commerce_ASPNET.git" class="project__link"  target="_blank">Source code</a>
-                            <a href="https://youtu.be/xcqi7A-sCgo" class="primary-button portfolio__button" target="_blank">
+                            <a href="https://github.com/dung812/E-commerce_ASPNET.git" class="project__link"
+                                target="_blank">Source code</a>
+                            <a href="https://youtu.be/xcqi7A-sCgo" class="primary-button portfolio__button"
+                                target="_blank">
                                 View website
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="row no-gutters swiper-slide">
+                    <!-- <div class="row no-gutters swiper-slide">
                         <div class="col l-o-2 l-4 m-12 c-12">
-                            <img src="assets/img/project/ssstutter-clone.jpg" alt="" class= "portfolio__img">
+                            <img src="assets/img/project/ssstutter-clone.jpg" alt="" class="portfolio__img">
                         </div>
                         <div class="col l-5 m-12 c-12 slide-content">
                             <h3 class="section__title">Clone sales websites</h3>
-                            <p class="section__desc">Simple static website with Angular, this website has some functions like dynamic website such as view product detail, Shopping cart using localstorage,...</p>
+                            <p class="section__desc">Simple static website with Angular, this website has some functions
+                                like dynamic website such as view product detail, Shopping cart using localstorage,...
+                            </p>
                             <p class="section_desc">Used: HTML, SCSS, TailwindCSS, Angular</p>
-                            <a href="https://github.com/dung812/clothes-clone_Angular.git" class="project__link"  target="_blank">Source code</a>
-                            <a href="https://clothesworld.netlify.app/" class="primary-button portfolio__button" target="_blank">
+                            <a href="https://github.com/dung812/clothes-clone_Angular.git" class="project__link"
+                                target="_blank">Source code</a>
+                            <a href="https://clothesworld.netlify.app/" class="primary-button portfolio__button"
+                                target="_blank">
                                 View website
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -268,14 +330,16 @@
                     </div>
                     <div class="row no-gutters swiper-slide">
                         <div class="col l-o-2 l-4 m-12 c-12">
-                            <img src="assets/img/project/portfolio-big.jpg" alt="" class= "portfolio__img">
+                            <img src="assets/img/project/portfolio-big.jpg" alt="" class="portfolio__img">
                         </div>
                         <div class="col l-5 m-12 c-12 slide-content">
                             <h3 class="section__title">Portfolio Website</h3>
                             <p class="section__desc">Personal Portfolio Website. You're Here Only!</p>
                             <p class="section_desc">Used: HTML, CSS, Javascript vanila</p>
-                            <a href="https://github.com/dung812/portfolio.git" class="project__link"  target="_blank">Source code</a>
-                            <a href="https://nguyendung.netlify.app/" class="primary-button portfolio__button" target="_blank">
+                            <a href="https://github.com/dung812/portfolio.git" class="project__link"
+                                target="_blank">Source code</a>
+                            <a href="https://nguyendung.netlify.app/" class="primary-button portfolio__button"
+                                target="_blank">
                                 View website
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -283,12 +347,13 @@
                     </div>
                     <div class="row no-gutters swiper-slide">
                         <div class="col l-o-2 l-4 m-12 c-12">
-                            <img src="assets/img/project/woocommerce.jpg" alt="" class= "portfolio__img">
+                            <img src="assets/img/project/woocommerce.jpg" alt="" class="portfolio__img">
                         </div>
                         <div class="col l-5 m-12 c-12 slide-content">
                             <h3 class="section__title">Ecommerce website wordpess</h3>
                             <p class="section__desc">E-commerce website using WooCommerce a plugin of WordPress.</p>
-                            <a href="http://onlineshopdemo.unaux.com/" class="primary-button portfolio__button" target="_blank">
+                            <a href="http://onlineshopdemo.unaux.com/" class="primary-button portfolio__button"
+                                target="_blank">
                                 View website
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -296,46 +361,33 @@
                     </div>
                     <div class="row no-gutters swiper-slide">
                         <div class="col l-o-2 l-4 m-12 c-12">
-                            <img src="assets/img/project/memory-game.jpg" alt="" class= "portfolio__img">
+                            <img src="assets/img/project/memory-game.jpg" alt="" class="portfolio__img">
                         </div>
                         <div class="col l-5 m-12 c-12 slide-content">
                             <h3 class="section__title">Memory game</h3>
                             <p class="section__desc">Simple memory game.</p>
                             <p class="section_desc">Used: HTML, CSS, SCSS, Javascript</p>
-                            <a href="https://github.com/dung812/memory-game_simpleJS.git" class="project__link"  target="_blank">Source code</a>
-                            <a href="https://dung812.github.io/memory-game_simpleJS/" class="primary-button portfolio__button" target="_blank">
+                            <a href="https://github.com/dung812/memory-game_simpleJS.git" class="project__link"
+                                target="_blank">Source code</a>
+                            <a href="https://dung812.github.io/memory-game_simpleJS/"
+                                class="primary-button portfolio__button" target="_blank">
                                 View website
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="row no-gutters swiper-slide">
-                        <div class="col l-o-2 l-4 m-12 c-12">
-                            <img src="assets/img/project/blog.jpg" alt="" class= "portfolio__img">
-                        </div>
-                        <div class="col l-5 m-12 c-12 slide-content">
-                            <h3 class="section__title"></h3>
-                            <p class="section__desc">JSON-Server Mock API project CRUD Blog</p>
-                            <p class="section_desc">It's a simple web page that fetch a Fake REST API of JSON Server and the database was deployed on Heroku. Feature to Create, Read, Update, Delete, Filter blog list<br/>Used: HTML, CSS, Javascript</p>
-                            <a href="https://github.com/dung812/JSON-Server-CRUDblog_API.git" class="project__link"  target="_blank">Source code</a>
-                            <a href="https://dung812.github.io/JSON-Server-CRUDblog_API" class="primary-button portfolio__button" target="_blank">
-                                View website
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination portfolio__papination"></div>
-            
+
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev portfolio__preNext"></div>
                 <div class="swiper-button-next portfolio__preNext"></div>
             </div>
-            <div class="work-more">
+            <!-- <div class="work-more">
                 <a href="./project/project.html">View more</a>
-            </div>
+            </div> -->
         </div>
 
         <!--==================== CONTACT ====================-->
@@ -346,26 +398,33 @@
             <div class="grid wide">
                 <div class="row contact-content">
                     <div class="col l-6 m-12 c-12 contact-info">
-                        <p class="section__title contact-title">If you've got a project in mind, why not get in touch. Let's work together.</p>
-                        <p class="section__subtitle contact-des">I'm available for interesting work or projects. Big or small. You can contact me using the form, or get my information below.</p>
+                        <p class="section__title contact-title">If you've got a project in mind, why not get in touch.
+                            Let's work together.</p>
+                        <p class="section__subtitle contact-des">I'm available for interesting work or projects. Big or
+                            small. You can contact me using the form, or get my information below.</p>
                         <div class="contact--social-network">
-                            <div class="social-item"><a href="tel: +84 706437167"><i class="uil uil-phone social-icon"></i>+84 (0) 706 437 167</a></div>
-                            <div class="social-item"><a href="mailto: ntdung8124@gmail.com"><i class="uil uil-envelope-alt social-icon"></i>ntdung8124@gmail.com</a></div>
-                            <div class="social-item"><a href="https://m.me/nguyenthanhdungggg/" target="_blank"><i class="uil uil-facebook-messenger-alt social-icon"></i>Messenger</a></div>
-                        
+                            <div class="social-item"><a href="tel: +84 706437167"><i
+                                        class="uil uil-phone social-icon"></i>+84 (0) 706 437 167</a></div>
+                            <div class="social-item"><a href="mailto: ntdung8124@gmail.com"><i
+                                        class="uil uil-envelope-alt social-icon"></i>ntdung8124@gmail.com</a></div>
+                            <div class="social-item"><a href="https://m.me/nguyenthanhdungggg/" target="_blank"><i
+                                        class="uil uil-facebook-messenger-alt social-icon"></i>Messenger</a></div>
+
                         </div>
                     </div>
                     <div class="col l-o-2 l-4 m-12 c-12">
                         <form action="" method="POST" class="contact__form" id="form-1">
                             <div class="form-group">
-                                <input id="fromName" name="name" type="text" placeholder="Your name" class="form-control">
+                                <input id="fromName" name="name" type="text" placeholder="Your name"
+                                    class="form-control">
                                 <span class="form-message"></span>
                             </div>
                             <div class="form-group">
-                                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                <input id="email" name="email" type="text" placeholder="Your email"
+                                    class="form-control">
                                 <span class="form-message"></span>
                             </div>
-        
+
                             <div class="form-group">
                                 <textarea rows="8" id="msg" placeholder="Your message" class="form-control"></textarea>
                                 <span class="form-message"></span>
@@ -388,29 +447,39 @@
                     <p class="footer__title">Dung's Portfolio</p>
                     <p class="footer_desc">Thank you for visiting my personal portfolio
                         website. Connect with me over socials.</p>
-                    <p class="footer_desc">Please wait for a while all major projects will 
-                        be listed soon. Till then keep visiting. Connect 
+                    <p class="footer_desc">Please wait for a while all major projects will
+                        be listed soon. Till then keep visiting. Connect
                         with me over live chat!
                     </p>
                 </div>
                 <div class="col l-4 m-12 c-12 footer-item">
                     <p class="footer__title">Quick Links</p>
                     <ul>
-                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#">Home</a></li>
-                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#about">About</a></li>
-                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#skills">Skills</a></li>
-                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#work">Work</a></li>
-                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#contact">Contact</a></li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#">Home</a>
+                        </li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a
+                                href="#about">About</a></li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a
+                                href="#skills">Skills</a></li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a href="#work">Work</a>
+                        </li>
+                        <li class="footer--link-item"><i class="uil uil-arrow-circle-right"></i><a
+                                href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col l-4 m-12 c-12 footer-item">
                     <p class="footer__title">Contact info</p>
-                    <div class="social-item"><a href="tel: 0706437167"><i class="uil uil-phone social-icon"></i>+84 (0) 706 437 167</a></div>
-                    <div class="social-item"><a href="mailto: ntdung8124@gmail.com"><i class="uil uil-envelope-alt social-icon"></i>ntdung8124@gmail.com</a></div>
+                    <div class="social-item"><a href="tel: 0706437167"><i class="uil uil-phone social-icon"></i>+84 (0)
+                            706 437 167</a></div>
+                    <div class="social-item"><a href="mailto: ntdung8124@gmail.com"><i
+                                class="uil uil-envelope-alt social-icon"></i>ntdung8124@gmail.com</a></div>
                     <div class="footer__social">
-                        <a href="https://www.facebook.com/nguyenthanhdungggg/" target="_blank" class="footer__icon"><i class="uil uil-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/in/nguyen-dung-89b75819a/" target="_blank" class="footer__icon"><i class="uil uil-linkedin-alt"></i></a>
-                        <a href="https://github.com/dung812" target="_blank" class="footer__icon"><i class="uil uil-github-alt"></i></a>
+                        <a href="https://www.facebook.com/nguyenthanhdungggg/" target="_blank" class="footer__icon"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/nguyen-dung-89b75819a/" target="_blank"
+                            class="footer__icon"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://github.com/dung812" target="_blank" class="footer__icon"><i
+                                class="uil uil-github-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -441,6 +510,16 @@
             quantity: 2.00
         })
     </script> -->
+
+    <!--==================== TIME LINE ====================-->
+    <script src="assets/js/timeline.js"></script>
+
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            verticalStartPosition: 'right',
+            verticalTrigger: '150px'
+        });
+    </script>
     <!--==================== SWIPER JS ====================-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
@@ -450,7 +529,7 @@
     <!--===== PRELOADER =====-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        window.addEventListener("load",function () {
+        window.addEventListener("load", function () {
             $("#preloader").fadeOut('slow');
         });
     </script>
@@ -462,27 +541,28 @@
             form: '#form-1',
             formGroupSelector: '.form-group',
             errorSelector: '.form-message',
-            rules:[
+            rules: [
                 Validator.isRequired('#fromName'),
                 Validator.isEmail('#email'),
             ],
-            onSubmit: function (data){ // Trả lại các giá trị mà user đã nhập
+            onSubmit: function (data) { // Trả lại các giá trị mà user đã nhập
                 // Call API
-                console.log(data);    
+                console.log(data);
             }
         });
     </script>
-    
+
     <!--==================== SENT EMAIL ====================-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
-    (function() {
-    emailjs.init("user_p0sGghCRUD1hI8ItVDztq");
-    })();
+        (function () {
+            emailjs.init("user_p0sGghCRUD1hI8ItVDztq");
+        })();
     </script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/skills.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
